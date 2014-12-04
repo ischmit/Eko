@@ -1,6 +1,11 @@
 html {
  	-webkit-font-smoothing:antialiased;
 }
+html, body. div{
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+}
 
 body {
   background-color: #fff;
@@ -15,11 +20,17 @@ body p{
 	border-radius: 4px;
 }
 
+.row{
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
 .header-nav {
 	background-color: #424242;
 	border-radius: 0;
 	margin: 0;
 	border: 0;
+	width:100%;
 	-webkit-box-shadow: 0px 1px 3px rgba(50, 50, 50, 0.5);
 	-moz-box-shadow:    0px 1px 3px rgba(50, 50, 50, 0.5);
 	box-shadow:         0px 1px 3px rgba(50, 50, 50, 0.5);
@@ -47,7 +58,7 @@ margin: 0px 0;
 }
 
 .header-nav .site-nav ul li > a{
-	color:#424242;
+	color:#05c07b;
 	text-transform: uppercase;
 	font-weight: 600;
 	font-size: 14px;
@@ -491,8 +502,20 @@ hr.soften {
 }
 
 /* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
-
+@media (max-width:767px) {
+	.team{
+		background-image: url('../images/office.jpg');
+	}
+	.team2{
+		color:#666666;
+		text-align:right;
+	}
+	.team2 .btn-store {
+		color:#666666;
+		border-width: 2px;
+		border-color:#666666;
+	}
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
@@ -776,7 +799,6 @@ hr.soften {
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 html{    
-	background:url('../images/intro.jpg') no-repeat;
   background-size: cover;
   height:100%;
 }
